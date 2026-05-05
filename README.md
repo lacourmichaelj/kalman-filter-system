@@ -1,6 +1,6 @@
 # Kalman Filter Tracking System
 
-This project implements a real-time state estimation system using a Kalman Filter.
+This project implements a real-time state estimation system using a Kalman Filter, combining a FastAPI backend, a Streamlit interface, and Docker-based deployment.
 
 The system is composed of:
 - FastAPI backend that performs state estimation
@@ -13,7 +13,7 @@ The system is composed of:
 
 - Real-time position and velocity estimation
 - Interactive UI for sending measurements
-- Stateful tracking system
+- Stateful tracking system with sequential state updates
 - REST API for predictions
 - Dockerized deployment
 
@@ -33,6 +33,7 @@ The system is composed of:
 
 ![Demo](screenshots/demo.png)
 
+Interactive UI for sending measurements and visualizing state estimates in real time.
 ---
 
 ## Run Locally
@@ -83,6 +84,12 @@ POST /predict
 ```
 
 Returns estimated position and velocity.
+
+## Future Improvements
+
+- Live trajectory visualization
+- Cloud deployment (AWS/GCP)
+- Integration with real sensor data
 
 ---
 
